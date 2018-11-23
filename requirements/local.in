@@ -1,0 +1,8 @@
+# Packages required for local development
+-r test.txt
+-r docs.txt
+
+django-debug-toolbar
+docker-compose==1.9.0               # lock to this version to workaround https://github.com/ansible/ansible/issues/20492
+edx-i18n-tools
+transifex-client==0.13.1            # pinned to resolve dependecy conflict in requests package while running pip-compile
